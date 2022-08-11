@@ -55,6 +55,9 @@ All instructions assume you use bash.  Change as needed for other shells.
     export ATS_BASE=/my/path/to/all/things/ats
     export ATS_BUILD_TYPE=Release
     export ATS_VERSION=master
+    export ATS_CC=/usr/local/bin/gcc-7
+    export ATS_CXX=/usr/local/bin/g++-7
+    export ATS_FC=/usr/local/bin/gfortran-7
     export OPENMPI_DIR=/my/path/to/mpi
     # END EDIT THESE!
 
@@ -86,7 +89,7 @@ All instructions assume you use bash.  Change as needed for other shells.
 
   * Clone the Amanzi source for the latest release, or for the main branch if you need the latest commits.
     ```
-    git clone -b amanzi-MAJOR.MINOR http://github.com/amanzi/amanzi $AMANZI_SRC_DIR
+    git clone -b amanzi-MAJOR.MINOR http://github.com/wk1984/amanzi $AMANZI_SRC_DIR
     ```
 
 2. Configure and build the Amanzi TPLs, Amanzi, and ATS.
