@@ -28,6 +28,9 @@ echo ""
 ${AMANZI_SRC_DIR}/bootstrap.sh \
    ${dbg_option} \
    --with-mpi=${OPENMPI_DIR} \
+   --with-c-compiler=${ATS_CC} \
+   --with-cxx-compiler=${ATS_CXX} \
+   --with-fort-compiler=${ATS_FC} \
    --enable-shared \
    --enable-clm \
    --disable-structured  --enable-unstructured \
